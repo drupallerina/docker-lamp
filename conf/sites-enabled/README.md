@@ -1,4 +1,4 @@
-# sites-enabled
+# Configuration directory: sites-enabled
 This directory contains *.conf Apache vHost configuration files. All *.conf files in this directory, will be copied to `/etc/apache2/sites-enabled`.
 
 ## Example
