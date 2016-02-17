@@ -1,8 +1,8 @@
 # Configuration directory: sites-enabled
-This directory contains *.conf Apache vHost configuration files. All *.conf files in this directory, will be copied to `/etc/apache2/sites-enabled`.
+This directory contains `*.conf` Apache vHost configuration files. All `*.conf` files in this directory, will be copied to `/etc/apache2/sites-enabled`.
 
 ## Example
-Getting a vHost running only requires you to create a *.conf file (e.g `example.com.conf`) in this directory, which contains a vHost configuration like this:
+Getting a vHost running only requires you to create a `*.conf` file (e.g `example.com.conf`) in this directory, which contains a vHost configuration like this:
 
 ```
 <VirtualHost *:80>

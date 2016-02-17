@@ -1,2 +1,8 @@
 .idea
+
+# ignore custom apache sites-enabled vHost configurations
+conf/sites-enabled/*.conf
+
+# ignore everything in www but README.md
 www/*
+!www/README.md
