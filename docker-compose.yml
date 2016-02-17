@@ -2,7 +2,7 @@ web:
   build: .
   volumes:
     # make sure to mount your htdocs as /var/www/html, for example:
-    # - /c/Users/username/htdocs:/var/www/html
+    # - /c/Users/username/development/www:/var/www/html
   environment:
       XDEBUG_CONFIG: remote_host=192.168.99.1
   ports:
