@@ -10,7 +10,7 @@ Getting this to run, requires:
 Setting up this development environment only requires you to:
 
 ```bash
-git clone git@github.com:PhilippSchaffrath/development.git
+git clone git@github.com:PhilippSchaffrath/docker-lamp.git
 cd development
 docker-compose up
 ```
