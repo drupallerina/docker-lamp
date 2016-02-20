@@ -27,7 +27,7 @@ Since it is unknown where you will clone this repository to, the docker-compose.
 
 It is recommended to mount your projects directory to `/var/www/html` since it is the apache2 document root. But it is up to you if you want to change the configuration files or use vHosts.
 
-### Configuration
+### Customization
 All configuration files are located in the `conf` directory. Once you have edited a configuration, you have to re-build the docker image. This can easily be done:
 
 ```
