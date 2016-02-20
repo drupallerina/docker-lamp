@@ -8,6 +8,7 @@ web:
   ports:
     - "80:80"
     - "443:443"
+    - "10022:22"
   links:
       - database
 
