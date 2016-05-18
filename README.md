@@ -10,9 +10,9 @@ Getting this to run, requires:
 Setting up this development environment only requires you to:
 
 ```bash
-git clone git@github.com:PhilippSchaffrath/docker-lamp.git development
+git clone git@github.com:drupallerina/docker-lamp.git development_docker
 cd development
-docker-compose up
+docker-compose up -d
 ```
 
 This will build the required image and launch 2 docker container. One for apache2, php5 and additional development tools, and one containing a mysql server.
