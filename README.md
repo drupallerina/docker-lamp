@@ -1,5 +1,5 @@
 # docker-lamp
-This repository contains an easy to customize local development environment containing php5, apache and mysql, built with docker.
+This repository contains an easy to customize local development environment containing php5, apache, mysql and phpmyadmin, built with docker.
 
 ## Requirements
 Getting this to run, requires:
@@ -15,7 +15,8 @@ cd development
 docker-compose up -d
 ```
 
-This will build the required image and launch 2 docker container. One for apache2, php5 and additional development tools, and one containing a mysql server.
+This will build the required image and launch 3 docker containers. One for apache2, php5 and additional development tools, one containing a mysql server and one containing phpmyadmin.
+Your application will be available at http://172.17.0.1
 
 ## Configuration
 Since it is unknown where you will clone this repository to, the docker-compose.yml does not mount volumes by default. To mount your projects into your docker container, add the following to the docker-compose.yml:
@@ -45,4 +46,7 @@ Debugging is as easy as it gets. Simply use the [PhpStorm bookmarklets](https://
 
 ### Remote PHP Interpreter
 Since SSH is enabled by default in this environment. You can simply configure a remote interpreter via ssh.
-Connect as `root@192.168.99.100:10022` with the password `docker`. 
+Connect as `root@192.168.99.100:10022` with the password `docker`.
+
+### phpmyadmin
+Available at http://172.17.0.1:8080/

@@ -3,6 +3,8 @@ web:
   volumes:
     # make sure to mount your htdocs as /var/www/html, for example:
     # - /c/Users/username/development/www:/var/www/html
+    - /home/nm/Code/docker/wb_aw14k009_docker/www:/var/www/html
+
   environment:
       XDEBUG_CONFIG: remote_host=192.168.99.1
   ports:
@@ -23,7 +25,12 @@ phpmyadmin:
   container_name: myadmin
   environment:
    - PMA_ARBITRARY=1
+   - PMA_ABSOLUTE_URI=phpmyadmin.wb_aw14k009_docker.local
+   - PMA_HOST=database
+   - PMA_USER=root
+   - PMA_PASSWORD=root
   restart: always
   ports:
    - 8080:80
-
+  links:
+    - database
